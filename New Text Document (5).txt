@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="navbar" id="navbar">
+
+    <div class="logo">
+      <img src="your-logo.png" alt="Website Logo">
+    </div>
+<div class="topnav">
+    <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search for products, brands, and more" name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+</div>
+
+<div class="signup">
+<div>
+<a class="box" href="/account/login?ret=/">Sign Up</a>
+</div>
+</div>
+<div class="login">
+<div>
+<a class="box2" href="/account/login?ret=/">Login</a>
+</div>
+</div>
+
+<div class="YUhWwv">
+<a class="_3SkBxJ" href="/viewcart?exploreMode=true&amp;preference=FLIPKART">
+ <i class="fa fa-shopping-cart" style="font-size: 20px" id="V3C5bO"></i> 
+<span> Cart</span>
+</a></div>

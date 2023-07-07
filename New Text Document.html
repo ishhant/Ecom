@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* CSS styles for the navbar */
+    .navbar {
+      position: sticky;
+      top: 0;
+      background-color: black;
+      padding: 10px;
+      transition: all 0.3s ease;
+    }
+
+    /* CSS styles for the transformed navbar */
+    .navbar-transformed {
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-top: 50px;
+    }
+
+    /* Other styles for the page content */
+    body {
+      height: 2000px; /* Just for demonstration purposes */
+      margin: 0;
+      padding: 0;
+    }
+
+    .content {
+      margin-top: 200px; /* To create space for the navbar */
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <h1>Sticky Navbar</h1>
+  </nav>
+
+  <div class="content">
+    <h2>Scroll down to see the effect</h2>
+  </div>
+
+  <script>
+    // Function to handle the scroll event
+    function handleScroll() {
+      const navbar = document.getElementById('navbar');
+
+      // Calculate the scroll position
+      const scrollPosition = window.scrollY || window.pageYOffset;
+
+      // Apply the transformation when scrolling beyond a certain threshold
+      if (scrollPosition > 100) {
+        navbar.classList.add('navbar-transformed');
+      } else {
+        navbar.classList.remove('navbar-transformed');
+      }
+    }
+
+    // Attach the scroll event listener
+    window.addEventListener('scroll', handleScroll);
+  </script>
+</body>
+</html>

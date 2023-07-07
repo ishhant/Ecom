@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h1>Shopping Cart</h1>
+
+  <div id="cartItems"></div>
+
+  <h2>Total Price: <span id="totalPrice"></span></h2>
+
+  <script>
+    // Load cart from localStorage on page load
+    window.addEventListener('DOMContentLoaded', () => {
+      const storedCart = localStorage.getItem('cart');
+      const cartItemsContainer = document.getElementById('cartItems');
+      const totalPriceSpan = document.getElementById('totalPrice');
+      let totalPrice = 0;
+
+      if (storedCart) {
+        const cartItems = JSON.parse(storedCart);
+
+        // Iterate over cart items and display them
+        cartItems.forEach(item => {
+          const itemContainer = document.createElement('div');
+          const itemInfo = document.createElement('p');
+          const itemQuantity = document.createElement('span');
+          const itemPrice = document.createElement('span');
+
+          itemContainer.classList.add('cart-item');
+          itemInfo.textContent = `${item.name} (Quantity: `;
+          itemQuantity.textContent = item.quantity;
+          itemPrice.textContent = `Price: ₹${item.price * item.quantity})`;
+
+          itemInfo.appendChild(itemQuantity);
+          itemInfo.appendChild(document.createTextNode(', '));
+          itemInfo.appendChild(itemPrice);
+          itemContainer.appendChild(itemInfo);
+          cartItemsContainer.appendChild(itemContainer);
+
+          // Calculate total price
+          totalPrice += item.price * item.quantity;
+        });
+      }
+
+      totalPriceSpan.textContent = `₹${totalPrice}`;
+    });
+  </script>
+</body>
+</html>

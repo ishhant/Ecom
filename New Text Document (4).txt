@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="styles.css">
+  <title>Product Website</title>
+  
+    
+ 
+</head>
+<body>
+  <div id="container">
+    <div id="products">
+      <!-- Product Boxes -->
+      <div class="product-box">
+        <h3>Product 1</h3>
+        <p>Brand: Brand 1</p>
+        <p>Price: $19.99</p>
+        <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+
+      <div class="product-box">
+        <h3>Product 2</h3>
+        <p>Brand: Brand 2</p>
+        <p>Price: $29.99</p>
+        <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+
+      <!-- Add more product boxes as needed -->
+
+    </div>
+    <div id="sidebar">
+      <!-- Sidebar Filters -->
+      <h3>Filters</h3>
+      <p>Brand:</p>
+      <input type="checkbox" name="brand" value="brand1"> Brand 1<br>
+      <input type="checkbox" name="brand" value="brand2"> Brand 2<br>
+      <!-- Add more filter options as needed -->
+    </div>
+  </div>
+</body>
+</html>

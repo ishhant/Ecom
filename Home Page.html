@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="navbar" id="navbar">
+ 
+    <div class="logo">
+      <img src="your-logo.png" alt="Website Logo">
+    </div>
+    <div class="topnav">
+      <div class="search-container">
+        <form action="/action_page.php">
+          <input type="text" placeholder="Search for products...." name="search" id="search-bar">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+        <div id="search-results"></div>
+      </div>
+    </div>
+
+    <div class="signup">
+      <div>
+        <a class="box" href="/account/login?ret=/">Sign Up</a>
+      </div>
+    </div>
+    <div class="login">
+      <div>
+        <a class="box2" href="/account/login?ret=/">Login</a>
+      </div>
+    </div>
+
+    <div class="YUhWwv">
+      <a class="_3SkBxJ" href="cart.html">
+        <i class="fa fa-shopping-cart" style="font-size: 20px" id="V3C5bO"></i>
+        <span id="cartCount"> Cart</span>
+      </a>
+    </div>
+
+    <label class="switch" style="font-size: calc(40px + (80 - 40) * (100vw - 320px) / (2560 - 320)); ">
+      <input class="switch__input" type="checkbox" role="switch">
+      <svg class="switch__icon switch__icon--light" viewBox="0 0 12 12" width="12px" height="12px" aria-hidden="true">
+        <g fill="none" stroke="#fff" stroke-width="1" stroke-linecap="round">
+          <circle cx="6" cy="6" r="2" />
+          <g stroke-dasharray="1.5 1.5">
+            <polyline points="6 10,6 11.5" transform="rotate(0,6,6)" />
+            <polyline points="6 10,6 11.5" transform="rotate(45,6,6)" />
+            <polyline points="6 10,6 11.5" transform="rotate(90,6,6)" />
+            <polyline points="6 10,6 11.5" transform="rotate(135,6,6)" />
+            <polyline points="6 10,6 11.5" transform="rotate(180,6,6)" />
+            <polyline points="6 10,6 11.5" transform="rotate(225,6,6)" />
+            <polyline points="6 10,6 11.5" transform="rotate(270,6,6)" />
+            <polyline points="6 10,6 11.5" transform="rotate(315,6,6)" />
+          </g>
+        </g>
+      </svg>
+      <svg class="switch__icon switch__icon--dark" viewBox="0 0 12 12" width="12px" height="12px" aria-hidden="true">
+        <g fill="none" stroke="#fff" stroke-width="1" stroke-linejoin="round" transform="rotate(-45,6,6)">
+          <path d="m9,10c-2.209,0-4-1.791-4-4s1.791-4,4-4c.304,0,.598.041.883.105-.995-.992-2.367-1.605-3.883-1.605C2.962.5.5,2.962.5,6s2.462,5.5,5.5,5.5c1.516,0,2.888-.613,3.883-1.605-.285.064-.578.105-.883.105Z"/>
+        </g>
+      </svg>
+      <span class="switch__sr">Dark Mode</span>
+    </label>
+  </header>
+  <nav class="category-navbar">
+    <div class="category-item">
+      <img src="Audio Devices.webp" alt="Audio Devices"><br>
+      <p><b>Audio Devices</b></p>
+    </div>
+    <div class="category-item">
+      <img src="Camera and Accessories.webp" alt="Camera and Accessories"><br>
+      <p><b>Camera and Accessories</b></p>
+    </div>
+    <div class="category-item">
+      <img src="Computer Peripherals.webp" alt="Computer Peripherals"><br>
+      <p><b>Computer Peripherals</b></p>
+    </div>
+    <div class="category-item">
+      <img src="Gaming Accessories.webp" alt="Gaming Accessories"><br>
+      <p><b>Gaming Accessories</b></p>
+    </div>
+    <div class="category-item">
+      <img src="mobile.webp" alt="Mobile and its Accessories"><br>
+      <p><b>Mobile Phone and Accessories</b></p>
+    </div>
+    <div class="category-item">
+      <img src="laptop.webp" alt="Laptop Accessories"><br>
+      <p><b>Laptop Accessories</b></p>
+    </div>
+    <div class="category-item">
+      <img src="smart-home.png" alt="Smart Home Devices"><br>
+      <p><b>Smart Home Devices</b></p>
+    </div>
+    <div class="category-item">
+      <img src="wearables.webp" alt="Smart Wearables">
+<br>
+      <p><b>Smart Wearables</b></p>
+    </div>
+    <div class="category-item">
+      <img src="storage.webp" alt="Storage"><br>
+      <p><b>Storage</b></p>
+    </div>
+<div class="category-item">
+    <img src="tablets.webp" alt="Tablets"><br>
+      <p><b>Tablets</b></p>
+    </div>
+  </nav>
+
+ <br>
+<br>
+
+
+<div class="fullscreen-image">
+    <img id="Bg1" src="homecover_.jpeg" alt="Background image"></img>
+    <div class="intro-text">
+<img id="onhpage" src="your-logo.png" alt="Website Logo">
+      <p>For Electronics<br>Think Elextronix<br></p>
+    </div>
+  </div>
+
+
+
+
+<div class="_1AtVbE col-12-12" style="padding: 20px 10px 0px 10px;">
+<div class="_3E8aIl KdL3Vb _1Zogjd">
+
+<div class="_2JQgSY"><div class="_2CIhCB">
+<h2 class="_2cAig-">Upto<br>10%<br>Discount</h2>
+<div class="_30kJiF"><a class="_2KpZ6l _3dESVI" href=" ">VIEW ALL</a></div></div></div>
+<div class="_1oHPGm">
+<div class="_3ZYowz _2CfYpZ">
+<div class="mYI3GX">
+<div class="_2hKRMr _2CfYpZ" style="width: 2794px;">
+<div class="_37K3-p" style="transform: translateX(0px);">
+
+<div class="_3YgSsQ" style="width: 232px;">
+<div class="">
+<a title="Min. 50% Off" class="_6WQwDJ T88g6k"  href=" ">
+<div class="_10pg75" style="height: 200px;">
+<div class="CXW8mj" style="height: 200px; width: 200px;">
+<img class="_396cs4" alt="Mobile1" src="Mobile1.webp">
+</div></div><br>
+<div class="_3LU4EM">SAMSUNG<br>Galaxy F54</div>
+
+<div class="_2LaGin"></div>
+</a></div></div>
+
+<div class="_3YgSsQ" style="width: 232px;"><div class="">
+<a title="Min. 40% Off" class="_6WQwDJ T88g6k" data-widget-type="omu" href=" ">
+<div class="_10pg75" style="height: 200px;">
+<div class="CXW8mj" style="height: 200px; width: 200px;">
+<img class="_396cs4" alt="Mobile2" src="Mobile2.webp">
+</div></div><br>
+<div class="_3LU4EM">SAMSUNG<br>Galaxy A14</div>
+
+<div class="_2LaGin"></div>
+</a>
+</div></div>
+
+<div class="_3YgSsQ" style="width: 232px;">
+<div>
+<a title="Min. 50% Off" class="_6WQwDJ T88g6k" data-widget-type="omu" href=" ">
+<div class="_10pg75" style="height: 200px;">
+<div class="CXW8mj" style="height: 200px; width: 200px;">
+<img class="_396cs4" alt="Mobile3" src="Mobile3.webp">
+</div></div><br>
+<div class="_3LU4EM">OnePlus<br>Nord CE 2</div>
+
+<div class="_2LaGin"></div>
+</a>
+</div></div>
+
+<div class="_3YgSsQ" style="width: 232px;">
+<div>
+<a title="Min. 50% Off" class="_6WQwDJ T88g6k" data-widget-type="omu" href=" ">
+<div class="_10pg75" style="height: 200px;">
+<div class="CXW8mj" style="height: 200px; width: 200px;">
+<img class="_396cs4" alt="Mobile4" src="Mobile4.webp">
+</div></div><br>
+<div class="_3LU4EM">APPLE<br>iPhone 13</div>
+
+<div class="_2LaGin"></div>
+</a>
+</div></div>
+
+
+
+</div></div>
+</div></div></div></div></div>
+<br>
+<div class="_1AtVbE col-12-12" style="padding: 20px 10px 0px 10px;">
+<div class="_3E8aIl KdL3Vb _1Zogjd">
+<div class="_2JQgSY"><div class="_2CIhCB">
+<h2 class="_2cAig-">Upto<br>10%<br>Discount</h2>
+<div class="_30kJiF"><a class="_2KpZ6l _3dESVI" href=" ">VIEW ALL</a></div></div></div>
+
+<div class="_1oHPGm">
+<div class="_3ZYowz _2CfYpZ">
+<div class="mYI3GX">
+<div class="_2hKRMr _2CfYpZ" style="width: 2794px;">
+<div class="_37K3-p" style="transform: translateX(0px);">
+
+<div class="_3YgSsQ" style="width: 232px;">
+<div class="">
+<a title="Min. 50% Off" class="_6WQwDJ T88g6k" data-widget-type="omu" href=" ">
+<div class="_10pg75" style="height: 200px;">
+<div class="CXW8mj" style="height: 200px; width: 200px;">
+<img class="_396cs4" alt="Mobile5" src="Mobile5.webp">
+</div></div><br>
+<div class="_3LU4EM">REDMI<br>11 Prime</div>
+
+<div class="_2LaGin"></div>
+</a></div></div>
+
+<div class="_3YgSsQ" style="width: 232px;"><div class="">
+<a title="Min. 40% Off" class="_6WQwDJ T88g6k" data-widget-type="omu" href=" ">
+<div class="_10pg75" style="height: 200px;">
+<div class="CXW8mj" style="height: 200px; width: 200px;">
+<img class="_396cs4" alt="Mobile6" src="Mobile6.webp">
+</div></div><br>
+<div class="_3LU4EM">Infinix<br>SMART 7</div>
+
+<div class="_2LaGin"></div>
+</a>
+</div></div>
+
+<div class="_3YgSsQ" style="width: 232px;">
+<div>
+<a title="Min. 50% Off" class="_6WQwDJ T88g6k" data-widget-type="omu" href=" ">
+<div class="_10pg75" style="height: 200px;">
+<div class="CXW8mj" style="height: 200px; width: 200px;">
+<img class="_396cs4" alt="Mobile7" src="Mobile7.webp">
+</div></div><br>
+<div class="_3LU4EM">POCO<br>X5 5G</div>
+
+<div class="_2LaGin"></div>
+</a>
+</div></div>
+
+<div class="_3YgSsQ" style="width: 232px;">
+<div>
+<a title="Min. 50% Off" class="_6WQwDJ T88g6k" data-widget-type="omu" href=" ">
+<div class="_10pg75" style="height: 200px;">
+<div class="CXW8mj" style="height: 200px; width: 200px;">
+<img class="_396cs4" alt="Mobile8" src="Mobile8.webp">
+</div></div><br>
+<div class="_3LU4EM">MOTOROLA<br>e13</div>
+
+<div class="_2LaGin"></div>
+</a>
+</div></div>
+
+
+</div></div>
+</div></div></div></div></div></div>
+<br>
+<div class="_1AtVbE col-12-12" style="padding: 20px 10px 0px 10px;">
+<div class="_3E8aIl KdL3Vb _1Zogjd">
+<div class="_2JQgSY"><div class="_2CIhCB">
+<h2 class="_2cAig-">Best<br>of<br>Laptops</h2>
+<div class="_30kJiF"><a class="_2KpZ6l _3dESVI" href=" ">VIEW ALL</a></div></div></div>
+
+<div class="_1oHPGm">
+<div class="_3ZYowz _2CfYpZ">
+<div class="mYI3GX">
+<div class="_2hKRMr _2CfYpZ" style="width: 2794px;">
+<div class="_37K3-p" style="transform: translateX(0px);">
+
+<div class="_3YgSsQ" style="width: 232px;">
+<div class="">
+<a title="Min. 50% Off" class="_6WQwDJ T88g6k" data-widget-type="omu" href=" ">
+<div class="_10pg75" style="height: 200px;">
+<div class="CXW8mj" style="height: 200px; width: 200px;">
+<img class="_396cs4" alt="Headset" src="Laptop1.webp">
+</div></div><br>
+<div class="_3LU4EM">HP 15s (2023)<br>Intel Core i3</div>
+
+<div class="_2LaGin"></div>
+</a></div></div>
+
+<div class="_3YgSsQ" style="width: 232px;"><div class="">
+<a title="Min. 40% Off" class="_6WQwDJ T88g6k" data-widget-type="omu" href=" ">
+<div class="_10pg75" style="height: 200px;">
+<div class="CXW8mj" style="height: 200px; width: 200px;">
+<img class="_396cs4" alt="Smart Watches" src="laptop 4.webp">
+</div></div><br>
+<div class="_3LU4EM">Lenovo Intel<br>Celeron Dual Core</div>
+
+<div class="_2LaGin"></div>
+</a>
+</div></div>
+
+<div class="_3YgSsQ" style="width: 232px;">
+<div>
+<a title="Min. 50% Off" class="_6WQwDJ T88g6k" data-widget-type="omu" href=" ">
+<div class="_10pg75" style="height: 200px;">
+<div class="CXW8mj" style="height: 200px; width: 200px;">
+<img class="_396cs4" alt="Laptops" src="Laptop3.webp">
+</div></div><br>
+<div class="_3LU4EM">Lenovo IdeaPad<br>Ryzen 5</div>
+
+<div class="_2LaGin"></div>
+</a>
+</div></div>
+
+<div class="_3YgSsQ" style="width: 232px;">
+<div>
+<a title="Min. 50% Off" class="_6WQwDJ T88g6k" data-widget-type="omu" href=" ">
+<div class="_10pg75" style="height: 200px;">
+<div class="CXW8mj" style="height: 200px; width: 200px;">
+<img class="_396cs4" alt="cameras" src="laptop5.webp">
+</div></div><br>
+<div class="_3LU4EM">Infinix INBook X1<br>Neo Series</div>
+
+<div class="_2LaGin"></div>
+</a>
+</div></div>
+
+
+</div></div>
+</div></div></div></div></div></div>
+<br>
+<br>
+ <br>
+
+  <div class="gradient-container">
+<br>
+ <br>
+<br>
+ <br>
+<div class="neoncontainer">
+<p class="neonText">
+ DIGITISE - - YOUR - - LIFE
+
+</p>
+</div>
+<br>
+    <div class="fullcontainer">
+
+      <div class="watereffect">
+
+        <div class="neon-shining-text">
+    <span class="neon"><b>Mega Electronics Sale</b></span>
+  </div>
+      </div>
+      <div class="white-box"></div>
+    </div>
+<h1 style="color: white; font-size: 40px; margin-top: -40px; font-family: 'Tw Cen MT';">
+— Starting in Just —
+</h1>
+
+<div id="demo" style="color: white; font-size: 60px; text-align: center;" class="neonText"></div>
+  </div>
+
+ <br>
+<br>
+ <br>
+<br>
+ 
+  </main>
+
+<script>
+ function handleScroll() {
+      const navbar = document.getElementById('navbar');
+
+      // Calculate the scroll position
+      const scrollPosition = window.scrollY || window.pageYOffset;
+
+      // Apply the transformation when scrolling beyond a certain threshold
+      if (scrollPosition > 100) {
+        navbar.classList.add('navbar-transformed');
+      } else {
+        navbar.classList.remove('navbar-transformed');
+      }
+    }
+
+    // Attach the scroll event listener
+    window.addEventListener('scroll', handleScroll);
+
+window.addEventListener('scroll', function() {
+  var divs = document.querySelectorAll('._1AtVbE.col-12-12');
+  var screenHeight = window.innerHeight;
+
+  divs.forEach(function(div) {
+    var divPosition = div.getBoundingClientRect().top;
+
+    if (divPosition - screenHeight <= 0 && !div.classList.contains('animate-in')) {
+      div.style.animation = "floatInFromLeft 1s ease-in-out forwards"; /* Apply the animation when the div is in the viewport */
+      div.classList.add('animate-in');
+    }
+  });
+});
+
+const itemsList = [
+    { name: "Laptop", link: "products.html" },
+    { name: "Mobiles", link: "mobiles.html" },
+ { name: "Camera", link: "https://example.com/mobiles" },
+ { name: "Smart watch", link: "https://example.com/mobiles" },
+ { name: "Earpods", link: "https://example.com/mobiles" },
+{ name: "Gaming accessories", link: "https://example.com/mobiles" },
+{ name: "Smart home devices", link: "https://example.com/mobiles" }
+
+    // Add more items with their respective links to this list if needed
+  ];
+
+  function filterItems(inputValue) {
+    const matchingItems = itemsList.filter(item => item.name.toLowerCase().includes(inputValue.toLowerCase()));
+    return matchingItems;
+  }
+
+  function updateSearchResults() {
+    const searchInput = document.getElementById("search-bar");
+    const inputValue = searchInput.value;
+    const searchResultsContainer = document.getElementById("search-results");
+
+    const matchingItems = filterItems(inputValue);
+
+    searchResultsContainer.innerHTML = "";
+
+    if (inputValue !== "") {
+      const resultList = document.createElement("ul");
+      matchingItems.forEach(item => {
+        const listItem = document.createElement("li");
+        listItem.textContent = item.name;
+        listItem.setAttribute("data-link", item.link);
+        resultList.appendChild(listItem);
+      });
+      searchResultsContainer.appendChild(resultList);
+    }
+  }
+
+  const searchInput = document.getElementById("search-bar");
+  searchInput.addEventListener("input", updateSearchResults);
+
+  const searchResultsContainer = document.getElementById("search-results");
+  searchResultsContainer.addEventListener("click", (event) => {
+    const target = event.target;
+    if (target.tagName === "LI") {
+      const link = target.getAttribute("data-link");
+      if (link) {
+        window.location.href = link;
+      }
+    }
+  });
+
+  const searchForm = document.querySelector("form");
+  searchForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const inputValue = searchInput.value;
+    const matchingItems = filterItems(inputValue);
+
+    if (matchingItems.length > 0) {
+      const mostMatchedItem = matchingItems[0];
+      if (mostMatchedItem.link) {
+        window.location.href = mostMatchedItem.link;
+      }
+    }
+  });
+
+(function () {
+  const second = 20000,
+        minute = second * 60,
+        hour = minute * 60,
+        day = hour * 24;
+
+  //I'm adding this section so I don't have to keep updating this pen every year :-)
+  //remove this if you don't need it
+  let today = new Date(),
+      dd = String(today.getDate()).padStart(2, "0"),
+      mm = String(today.getMonth() + 1).padStart(2, "0"),
+      yyyy = today.getFullYear(),
+      nextYear = yyyy + 1,
+      dayMonth = "09/30/",
+      birthday = dayMonth + yyyy;
+  
+  today = mm + "/" + dd + "/" + yyyy;
+  if (today > birthday) {
+    birthday = dayMonth + nextYear;
+  }
+  //end
+  
+  const countDown = new Date(birthday).getTime(),
+      x = setInterval(function() {    
+
+        const now = new Date().getTime(),
+              distance = countDown - now;
+
+        document.getElementById("days").innerText = Math.floor(distance / (day)),
+          document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+          document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+          document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+
+        //do something later when date is reached
+        if (distance < 0) {
+          document.getElementById("headline").innerText = "It's my birthday!";
+          document.getElementById("countdown").style.display = "none";
+          document.getElementById("content").style.display = "block";
+          clearInterval(x);
+        }
+        //seconds
+      }, 0)
+  }());
+
+// Set the date we're counting down to
+var countDownDate = new Date("July 14, 2023 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+
+  </script>
+</body>
+</html>
+
